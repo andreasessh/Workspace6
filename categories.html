@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>eMercado - Todo lo que busques está aquí</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light p estiloDeLetra -1">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100 justify-content-between">
+          <li class="nav-item">
+            <a class="nav-link estiloDeLetra" href="iniciodepagina.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active estiloDeLetra" href="categories.html">Categorías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link estiloDeLetra" href="sell.html">Vender</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="campoDeUsuario" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown button
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="estiloDeLetra dropdown-item" href="cart.html"><button type="button" class="botonesFiltrado ">Mi Carrito</button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="botonesFiltrado" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                </a></li>
+                <li><a class="estiloDeLetra dropdown-item" href="my-profile.html"><button type="button" class="botonesFiltrado">Mi Perfil</button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="botonesFiltrado" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </svg></a></li>
+                <li><a class="estiloDeLetra dropdown-item" href="index.html" onclick="limpiarUsuario();"><button type="button" class="botonesFiltrado">Cerrar sesion</button><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="botonesFiltrado" viewBox="0 0 16 16">
+                  <path d="M7 6a1 1 0 0 1 2 0v1H7V6z"/>
+                  <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-2 6v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 1-1.224V6a2 2 0 1 1 4 0z"/>
+                </svg></a></li>
+              </ul>
+            </div>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="pb-5">
+    <div class="text-center p-4">
+      <h2 class="titulo2">Categorías</h2>
+      <br>
+      <p class="lead segundoParrafo">¡Verás aquí todas las categorías del sitio!</p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col text-end">
+          <div class="btn-group btn-group-toggle mb-4 botone" data-bs-toggle="buttons">
+            <input type="radio" class=" botonesFiltrado btn-check" name="options" id="sortAsc">
+            <label class=" botonesFiltrado btn btn-light" for="sortAsc">A-Z</label>
+            <input type="radio" class=" botonesFiltrado btn-check" name="options" id="sortDesc">
+            <label class=" botonesFiltrado btn btn-light" for="sortDesc">Z-A</label>
+            <input type="radio" class=" botonesFiltrado btn-check" name="options" id="sortByCount" checked>
+            <label class=" botonesFiltrado btn btn-light" for="sortByCount"><i class="botonesFiltrado fas fa-sort-amount-down mr-1"></i></label>
+          </div>
+        </div>
+      </div>
+      <div class="row estiloDeLetra">
+        <div class="col-lg-6 offset-lg-6 col-md-12 mb-1 container">
+          <div class="row container p-0 m-0 boton">
+            <div class="col">
+              <p class="font-weight-bolder text-end my-2 estiloDeLetra">Cantidad: </p>
+            </div>
+            <div class="col">
+              <input class="form-control botonesFiltrado" type="number" placeholder="min." id="rangeFilterCountMin">
+            </div>
+            <div class="col">
+              <input class="form-control botonesFiltrado" type="number" placeholder="máx." id="rangeFilterCountMax">
+            </div>
+            <div class="col-3 p-0">
+              <div class="btn-group" role="group">
+                <button class="btn btn-light btn-block BotonFiltrar" id="rangeFilterCount">Filtrar</button>
+                <button class="btn btn-link btn-sm BotonLimpiar" id="clearRangeFilter">Limpiar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="list-group" id="cat-list-container">
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-end">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a> -
+        2022</p>
+      <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
+    </div>
+  </footer>
+  <div id="spinner-wrapper">
+    <div class="lds-ring estilo">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/categories.js"></script>
+</body>
+
+</html>
